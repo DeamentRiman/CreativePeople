@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание в Creatikve People</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/styles.min.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="page-header">
+        <div class="container container_desktop">
+            <nav class="page-header__nav">
+                <div class="page-header__nav_wrapper">
+                    <div class="page-header__nav-logo">
+                        <img class="page-header__nav-logo-img" src="./img/raiff_logo.svg" width="133" height="28" alt="Логотип Райффайзен банка">
+                    </div>
+                    <div class="page-header__nav-visa">
+                        <img class="page-header__nav-visa-img" src="./img/visa_logo.svg" width="74" height="24" alt="Логотип VISA">
+                    </div>
+                </div>
+                <div class="page-header__nav-phone">
+                    <p class="page-header__nav-number page-header__nav-number_mob">8 800 770-75-62</p>
+                    <p class="page-header__nav-description page-header__nav-description_mob other">Бесплатно по России</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="page-main-promo">
+            <div class="page-main-promo_wrapper">
+                <div class="container">
+                    <p class="page-main-promo__subtitle subtitle">
+                        <span class="page-main-promo__subtitle_mobile">Обслуживание 0₽</span>
+                        <span class="page-main-promo__subtitle_desktop">Бесплатное обслуживание</span>
+                    </p>
+                    <h1 class="page-main-promo__title title">Кредитная карта с кэшбэком <br/> 
+                        <span class="page-main-promo__title_text">1,5</span> 
+                        <span class="page-main-promo__title_symbols">%</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="container container_button">
+                <a href="#form" class="page-main-promo__button button">Оформить онлайн</a>
+            </div>
+        </section>
+        <section class="page-main-benefits">
+            <div class="container">
+                <h2 class="page-main-benefits__title visually-hidden">Преимущества использования</h2>
+                <ul class="page-main-benefits__list">
+                    <li class="page-main-benefits__list-item">
+                        <p class="page-main-benefits__list-item-title">1,5
+                            <span class="page-main-benefits__list-item-title_size">%</span></p>
+                        <p class="page-main-benefits__list-item-subtitle subtitle">кэшбэк рублями</p>
+                    </li>
+                    <li class="page-main-benefits__list-item">
+                        <p class="page-main-benefits__list-item-title">0₽</p>
+                        <p class="page-main-benefits__list-item-subtitle subtitle">обслуживание</p>
+                    </li>
+                    <li class="page-main-benefits__list-item">
+                        <p class="page-main-benefits__list-item-title">
+                            <span class="page-main-benefits__list-item-title_size">до</span> 52 
+                            <span class="page-main-benefits__list-item-title_size">дней</span>
+                        </p>
+                        <p class="page-main-benefits__list-item-subtitle subtitle">без процентов</p>
+                    </li>
+                    <li class="page-main-benefits__list-item">
+                        <p class="page-main-benefits__list-item-title">
+                            <span class="page-main-benefits__list-item-title_size">до</span> 600 
+                            <span class="page-main-benefits__list-item-title_size">тыс. ₽</span></p>
+                        <p class="page-main-benefits__list-item-subtitle subtitle visually-mobile">и 52 дня без %</p>
+                        <p class="page-main-benefits__list-item-subtitle subtitle visually-desktop">кредитный лимит</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="page-main-cashback">
+            <div class="container">
+                <h2 class="page-main-cashback__title title-h2">Кэшбэк 1,5% без ограничений</h2>
+                <ul class="page-main-cashback__list">
+                    <li class="page-main-cashback__list-item">
+                        <p class="page-main-cashback__list-text">Кэшбэк рублями</p>
+                    </li>
+                    <li class="page-main-cashback__list-item">
+                        <p class="page-main-cashback__list-text">За любые покупки</p>
+                    </li>
+                    <li class="page-main-cashback__list-item">
+                        <p class="page-main-cashback__list-text">Без лимитов и ограничений</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="page-main-calculate">
+            <div class="container">
+                <h2 class="page-main-calculate__title title-h2 visually-mobile">Дополнительный кредит на любые цели</h2>
+                <p class="page-main-calculate__subtitle subtitle visually-mobile">Получите решение за 2 минуты</p>
+                <h2 class="page-main-calculate__title title-h2 visually-desktop">Возьмите дополнительный кредит</h2>
+                <p class="page-main-calculate__subtitle subtitle visually-desktop">Кредит на любые цели. Получите решение за 2 минуты</p>
+                <div class="page-main-calculate_wrapper">
+                    <div class="page-main-calculate__sliders">
+                        <div class="page-main-calculate__sliders-first">
+                            <input id="sum-result" class="page-main-calculate__sliders-first-result results" type="text" value="500000" disabled >
+                            <label class="page-main-calculate__sliders-first-label label" for="sum">Какая сумма нужна?</label>
+                            <span class="page-main-calculate__sliders-first-range-track"></span>
+                            <input class="page-main-calculate__sliders-first-input range" type="range" id="sum" name="sum" min="90000" max="2000000" value="500000" step="1000">
+                            <div class="page-main-calculate__sliders-first-range">
+                                <span class="page-main-calculate__sliders-first-range other">90 000 ₽</span>
+                                <span class="page-main-calculate__sliders-first-range other">2 000 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="page-main-calculate__sliders-second">
+                            <input id="time-result" class="page-main-calculate__sliders-second-result results" type="text" value="36" disabled>
+                            <label class="page-main-calculate__sliders-second-label label" for="sum">На какой срок?</label>
+                            
+                            <span class="page-main-calculate__sliders-second-range-track"></span>
+                            
+                            <input class="page-main-calculate__sliders-second-input range second-range" type="range" id="time" name="time" min="13" max="60" value="36" step="1">
+                            <div class="page-main-calculate__sliders-second-range">
+                                <span class="page-main-calculate__sliders-second-range other">13 мес.</span>
+                                <span class="page-main-calculate__sliders-second-range other">60 мес.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-main-calculate__total">
+                        <div class="page-main-calculate__total_wrapper">
+                            <p class="page-main-calculate__total-value">10,99%</p>
+                            <p class="page-main-calculate__total-comment">ваша ставка</p>
+                        </div>
+                        <div class="page-main-calculate__total_wrapper">
+                            <p class="page-main-calculate__total-value">14 265 ₽</p>
+                            <p class="page-main-calculate__total-comment">ежемесячный платёж</p>
+                        </div>                     
+                        <a class="page-main-calculate__total-button button">Получить кредит</a>
+                        <p class="page-main-calculate__total-note other">Расчет платежа приведен с учетом финансовой защиты. Не является офертой.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-main-form" id="form">
+            <div class="container">
+                <h2 class="page-main-form__title title-h2">Оформите карту онлайн</h2>
+                <ul class="page-main-form__list">
+                    <li class="page-main-form__list-item">Заполните онлайн-заявку. Это займет не больше 5 минут</li>
+                    <li class="page-main-form__list-item">Через 2 минуты придет смс с решением</li>
+                    <li class="page-main-form__list-item">Получите карту с бесплатной доставкой или в отделении</li>
+                </ul>
+            </div>
+            <div class="page-main-form__form">
+                <p class="page-main-form__form-text">Форма заявки на кредитную карту</p>
+            </div>
+        </section>
+        <section class="page-main-online">
+            <div class="container">
+                <h2 class="page-main-online__title title-h2">Удобный мобильный банк</h2>
+                <p class="page-main-online__subtitle subtitle">Пользуйтесь услугами онлайн без визита в отделение</p>
+                <div class="page-main-online__slider swiper">
+                    <div class="page-main-online__slider_wrapper">
+                        <div class="page-main-online__slider-item">
+                            <img src="img/slide1.jpg" alt="слайд 1" width="167" height="333" class="page-main-online__slider-img">                      
+                        </div>
+                        <div class="page-main-online__slider-item">
+                            <img src="img/slide2.jpg" alt="слайд 2" width="167" height="333" class="page-main-online__slider-img">
+                        </div>
+                        <div class="page-main-online__slider-item">
+                            <img src="img/slide3.jpg" alt="слайд 3" width="167" height="333" class="page-main-online__slider-img">
+                        </div>
+                        <div class="page-main-online__slider-item">
+                            <img src="img/slide4.jpg" alt="слайд 4" width="167" height="333" class="page-main-online__slider-img">
+                        </div>
+                    </div>
+                    <div class="page-main-online__slider-pagination">
+                        <ul class="page-main-online__slider-pagination-list">
+                            <li class="page-main-online__slider-pagination-list-bullet page-main-online__slider-pagination-list-bullet_active"></li>
+                            <li class="page-main-online__slider-pagination-list-bullet"></li>
+                            <li class="page-main-online__slider-pagination-list-bullet"></li>
+                            <li class="page-main-online__slider-pagination-list-bullet"></li>
+                            <li class="page-main-online__slider-pagination-list-bullet"></li>
+                            <li class="page-main-online__slider-pagination-list-bullet"></li>
+                        </ul>
+                    </div>
+                    <div class="page-main-online__slider-prev"></div>
+                    <div class="page-main-online__slider-next"></div>
+                </div>
+                <a class="page-main-online__button button visually-desktop">Оформить карту онлайн</a>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__info">
+            <div class="container">
+                <p class="page-footer__info-company other">© АО «Райффайзенбанк»</p>
+                <p class="page-footer__info-company other">Генеральная лицензия Банка России № 3292 от 17.02.2015. Юридический адрес: 129090, Москва, ул. Троицкая, д. 17, стр. 1</p>
+            </div>
+        </div>
+        <div class="container container_footer">
+            <div class="page-footer__description">
+                <p class="other">Кэшбэк – возврат средств. Кэшбэк начисляется на любые покупки, совершенные по карте VISA Кэшбэк на всё, в размере 1,5 % от суммы расходной операции. Начисленный за календарный месяц кэшбэк выплачивается рублями на счет клиента в течение 7 рабочих дней после окончания соответствующего календарного месяца. Кэшбэк не начисляется за совершение некоторых видов операций согласно правилам программы, размещенным на сайте raif.ru.</p>
+                <p class="other">Сроки проведения акции «Бесплатная кредитная карта «Кэшбэк на всё» для существующих и новых клиентов АО «Райффайзенбанк» — с 01.06.20 по 31.08.20. Информация об организаторе акции, о правилах ее проведения, количестве призов или выигрышей по результатам такой акции, сроках, месте и порядке их получения размещена на на raif.ru или по 8 800 770 09 08.</p>
+                <p class="other">В течение льготного периода до 52 дней, проценты по кредиту не начисляются на безналичные операции при условии своевременного внесения минимальных платежей и полного погашения задолженности последнего отчетного периода.  Ставка 19-49% годовых определяется индивидуально по результатам оценки кредитоспособности клиента и категории совершаемых клиентом операций по карте. Лимит кредита возобновляемый 15 000-600 000 руб., срок действия лимита не ограничен сроком действия кредитной карты. Кредитный договор действует до момента исполнения сторонами своих обязательств. Комиссии: за процессинг по картам, подключенным к программе лояльности: не взимается по акции/ вне акции 1490 руб. в год по основной карте, 500 рублей в год по дополнительной карте; за выдачу наличных в банкоматах банка и банков-партнеров – 3% от суммы снятия+300 руб/ в иных банкоматах – 3,9 % + 300 руб.; за переводы на карты банка/на карты других банков — 3% от суммы перевода+300 руб.; за квази-кэш-операции—3% от суммы операции + 300 руб.; за сервис «уведомление об операциях» - 60 руб. по основной/45 руб. по дополнительной карте в мес.; за совершение операции за рубежом в валюте, отличной от валюты счета — 1,65% от суммы операции; за внесение наличных денежных средств через кассу банка — 100 руб. (при внесении до 10 000 руб.).Банк принимает решение о предоставлении кредита на основании всей полученной информации и требований к заемщику. Действительно на 01.06.20. АО «Райффайзенбанк» 0+</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
