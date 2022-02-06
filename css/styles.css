@@ -637,7 +637,7 @@ input[type='range'].range::-webkit-slider-runnable-track{
        position: absolute;
        top: 35.2px;
        width: 10px;
-       height: 4px;
+       height: 4.3px;
        background-color: #FEE600;
        z-index: 1;
    }
