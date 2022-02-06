@@ -1,4 +1,5 @@
 /*page-main-calculate*/
+
 let scrollButton = document.querySelector('.container_button');
 let summ = document.querySelector('#sum');
 let summValue = document.querySelector('#sum-result');
