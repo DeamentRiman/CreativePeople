@@ -1,8 +1,8 @@
 /*page-main-calculate*/
 
-let scrollButton = document.querySelector('.container_button');
-let summ = document.querySelector('#sum');
-let summValue = document.querySelector('#sum-result');
+
+let sum = document.querySelector('#sum');
+let sumValue = document.querySelector('#sum-result');
 let time = document.querySelector('#time');
 let timeValue = document.querySelector('#time-result');
 
@@ -16,16 +16,31 @@ let timeTrumb = document.querySelector('#time').value;
 let timeTrumbMax = document.querySelector('#time').max;
 let timeTrumbMin = document.querySelector('#time').min;
 
-let sumRangeTrack = String(540*(sumTrumb-sumTrumbMin)/(sumTrumbMax-sumTrumbMin));
-let rangeTrack = String(540*(timeTrumb-timeTrumbMin)/(timeTrumbMax-timeTrumbMin));
+let windowWidth= window.innerWidth;
+let sumRangeTrack;
+let rangeTrack;
+if (windowWidth > 1440) {
+    sumRangeTrack = String(540*(sumTrumb-sumTrumbMin)/(sumTrumbMax-sumTrumbMin));
+    rangeTrack = String(540*(timeTrumb-timeTrumbMin)/(timeTrumbMax-timeTrumbMin));
+} else {
+    sumRangeTrack = String(311*(sumTrumb-sumTrumbMin)/(sumTrumbMax-sumTrumbMin));
+    rangeTrack = String(311*(timeTrumb-timeTrumbMin)/(timeTrumbMax-timeTrumbMin));
+}
+
 
 firstRangeTrack.style.width = sumRangeTrack + 'px';
 colorTrack.style.width = rangeTrack + 'px';
 
-summ.addEventListener('mousemove', () => {
-    summValue.value = String(summ.value);
+sum.addEventListener('mousemove', () => {
+    sumValue.value = String(sum.value);
     sumTrumb = document.querySelector('#sum').value;
     sumRangeTrack = String(540*(sumTrumb-sumTrumbMin)/(sumTrumbMax-sumTrumbMin));
+    firstRangeTrack.style.width = sumRangeTrack + 'px';
+})
+sum.addEventListener('touchmove', () => {
+    sumValue.value = String(sum.value);
+    sumTrumb = document.querySelector('#sum').value;
+    sumRangeTrack = String(311*(sumTrumb-sumTrumbMin)/(sumTrumbMax-sumTrumbMin));
     firstRangeTrack.style.width = sumRangeTrack + 'px';
 })
 
@@ -36,6 +51,14 @@ time.addEventListener('mousemove', () => {
     colorTrack.style.width = rangeTrack + 'px';
 })
 
+time.addEventListener('touchmove', () => {
+    timeValue.value = String(time.value);
+    timeTrumb = document.querySelector('#time').value
+    rangeTrack = String(311*(timeTrumb-timeTrumbMin)/(timeTrumbMax-timeTrumbMin));
+    colorTrack.style.width = rangeTrack + 'px';
+})
+
+let scrollButton = document.querySelector('.container_button');
 document.addEventListener('scroll', () =>{
     let scrollValue = document.scrollingElement.scrollTop;
     if (scrollValue >= 300) {
