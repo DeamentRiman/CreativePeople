@@ -635,7 +635,7 @@ input[type='range'].range::-webkit-slider-runnable-track{
    .page-main-calculate__sliders-first-range-track,
    .page-main-calculate__sliders-second-range-track{
        position: absolute;
-       top: 35px;
+       top: 35.2px;
        width: 10px;
        height: 4px;
        background-color: #FEE600;
